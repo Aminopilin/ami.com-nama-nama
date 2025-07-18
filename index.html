@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Putri & Recky - Wedding Invitation</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💒</text></svg>">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading-screen">
+        <div class="loading-content">
+            <div class="nikahflix-logo">NIKAHFLIX</div>
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
+            </div>
+            <p class="loading-text">Loading your love story...</p>
+        </div>
+    </div>
+
+    <!-- Main Container -->
+    <div id="main-container" class="main-container hidden">
+        <!-- Hero Section - Movie Poster Style -->
+        <section class="hero-section">
+            <div class="hero-background">
+                <!-- Placeholder for background image/video -->
+                <div class="background-placeholder">
+                    <p>Background Image/Video Placeholder</p>
+                    <small>Recommended: 1920x1080 landscape image or video</small>
+                </div>
+            </div>
+            
+            <div class="hero-overlay"></div>
+            
+            <div class="hero-content">
+                <div class="nikahflix-brand">NIKAHFLIX</div>
+                
+                <div class="movie-poster">
+                    <h1 class="movie-title">Putri & Recky</h1>
+                    <h2 class="movie-subtitle">Sebelum Hari H</h2>
+                    
+                    <div class="movie-meta">
+                        <span class="coming-soon">Coming Soon</span>
+                        <span class="release-date">09 Agustus 2025</span>
+                    </div>
+                    
+                    <div class="countdown-timer">
+                        <div class="countdown-item">
+                            <span id="days" class="countdown-number">00</span>
+                            <span class="countdown-label">Hari</span>
+                        </div>
+                        <div class="countdown-item">
+                            <span id="hours" class="countdown-number">00</span>
+                            <span class="countdown-label">Jam</span>
+                        </div>
+                        <div class="countdown-item">
+                            <span id="minutes" class="countdown-number">00</span>
+                            <span class="countdown-label">Menit</span>
+                        </div>
+                        <div class="countdown-item">
+                            <span id="seconds" class="countdown-number">00</span>
+                            <span class="countdown-label">Detik</span>
+                        </div>
+                    </div>
+                    
+                    <div class="movie-tags">
+                        <span class="tag">#getmarried</span>
+                        <span class="tag">#romantic</span>
+                        <span class="tag">#lovestory</span>
+                        <span class="tag">#documenter</span>
+                    </div>
+                    
+                    <button class="play-button" onclick="startInvitation()">
+                        <span class="play-icon">▶</span>
+                        Buka Undangan
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Navigation -->
+        <nav class="netflix-nav">
+            <div class="nav-brand">NIKAHFLIX</div>
+            <div class="nav-links">
+                <a href="#couple" class="nav-link">Couple</a>
+                <a href="#story" class="nav-link">Our Story</a>
+                <a href="#event" class="nav-link">Event</a>
+                <a href="#gallery" class="nav-link">Gallery</a>
+            </div>
+        </nav>
+
+        <!-- Couple Section -->
+        <section id="couple" class="section couple-section">
+            <div class="section-header">
+                <h2 class="section-title">Meet the Couple</h2>
+                <p class="section-subtitle">The stars of our love story</p>
+            </div>
+            
+            <div class="couple-grid">
+                <div class="couple-card bride-card">
+                    <div class="couple-image-container">
+                        <img src="images/foto.jpg" alt="Foto Mempelai Wanita" class="couple-image">
+                    </div>
+                    <div class="couple-info">
+                        <h3 class="couple-name">Putri</h3>
+                        <p class="couple-role">The Bride</p>
+                        <div class="couple-details">
+                            <p>Putri dari</p>
+                            <p><strong>Bapak Asep & Ibu Neneng</strong></p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="couple-divider">
+                    <div class="heart-icon">💕</div>
+                </div>
+                
+                <div class="couple-card groom-card">
+                    <div class="couple-image-container">
+                        <img src="images/foto1.jpg" alt="Foto Mempelai Pria" class="couple-image">
+                    </div>
+                    <div class="couple-info">
+                        <h3 class="couple-name">Recky</h3>
+                        <p class="couple-role">The Groom</p>
+                        <div class="couple-details">
+                            <p>Putra dari</p>
+                            <p><strong>Bapak Ernis Liunsanda & Ibu Nuraisyah</strong></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Story Section -->
+        <section id="story" class="section story-section">
+            <div class="section-header">
+                <h2 class="section-title">Our Love Story</h2>
+                <p class="section-subtitle">A journey worth watching</p>
+            </div>
+            
+            <div class="story-timeline">
+                <div class="story-item">
+                    <div class="story-image">
+                        <img src="images/foto2.jpg" alt="Foto Pertama Bertemu" class="story-image-actual">
+                    </div>
+                    <div class="story-content">
+                        <h4>Pertama Bertemu</h4>
+                        <p class="story-date">2020</p>
+                        <p>Cerita singkat tentang pertemuan pertama...</p>
+                    </div>
+                </div>
+                
+                <div class="story-item">
+                    <div class="story-image">
+                        <img src="images/foto3.jpg" alt="Foto Pacaran" class="story-image-actual">
+                    </div>
+                    <div class="story-content">
+                        <h4>Menjalin Kasih</h4>
+                        <p class="story-date">2021</p>
+                        <p>Cerita tentang masa pacaran...</p>
+                    </div>
+                </div>
+                
+                <div class="story-item">
+                    <div class="story-image">
+                        <img src="images/foto4.jpg" alt="Foto Lamaran" class="story-image-actual">
+                    </div>
+                    <div class="story-content">
+                        <h4>Lamaran</h4>
+                        <p class="story-date">2024</p>
+                        <p>Cerita tentang momen lamaran...</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Event Section -->
+        <section id="event" class="section event-section">
+            <div class="section-header">
+                <h2 class="section-title">Wedding Event</h2>
+                <p class="section-subtitle">Save the date</p>
+            </div>
+            
+            <div class="event-details">
+                <div class="event-card">
+                    <div class="event-icon">📅</div>
+                    <h4>Tanggal</h4>
+                    <p>Sabtu, 09 Agustus 2025</p>
+                </div>
+                
+                <div class="event-card">
+                    <div class="event-icon">🕙</div>
+                    <h4>Waktu</h4>
+                    <p>10:00 WITA</p>
+                </div>
+                
+                <div class="event-card">
+                    <div class="event-icon">📍</div>
+                    <h4>Lokasi</h4>
+                    <p>Kediaman Mempelai Laki-laki</p>
+                    <a href="https://maps.app.goo.gl/ZBy4A1zwgWQ3A1VT8" target="_blank" class="location-btn">
+                        Lihat Lokasi
+                    </a>
+                </div>
+                
+                <div class="event-card">
+                    <div class="event-icon">🎵</div>
+                    <h4>Soundtrack</h4>
+                    <p>"Anugrah Terindah"</p>
+                    <p><small> Andmesh </small></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section id="gallery" class="section gallery-section">
+            <div class="section-header">
+                <h2 class="section-title">Photo Gallery</h2>
+                <p class="section-subtitle">Moments to remember</p>
+            </div>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="images/foto1.jpg" alt="Foto 1" class="gallery-image">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/foto2.jpg" alt="Foto 2" class="gallery-image">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/foto3.jpg" alt="Foto 3" class="gallery-image">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/foto4.jpg" alt="Foto 4" class="gallery-image">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/foto5.jpg" alt="Foto 5" class="gallery-image">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/foto6.jpg" alt="Foto 6" class="gallery-image">
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="nikahflix-brand">NIKAHFLIX</div>
+                <p>Thank you for being part of our love story</p>
+                <p class="footer-subtitle">Putri & Recky • 2025</p>
+            </div>
+        </footer>
+    </div>
+
+
+
+    <!-- Audio Element -->
+     <audio autoplay loop hidden>
+    <source src="audio/AdmeshAnugrahTerindah.mp3" type="audio/mpeg">
+    <source src="audio/AnugerahTerindah.mp4" type="audio/mp4">
+    Your browser does not support the audio element.
+</audio>
+
+
+    <script src="js/script.js"></script>
+    <!-- Countdown dan Autoplay Fix -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    // ========== COUNTDOWN FIX ===========
+    const targetDate = new Date("2025-08-09T10:00:00+08:00").getTime(); // 09 Agustus 2025, 10:00 WITA
+
+    function updateCountdown() {
+        const now = new Date().getTime();
+        const distance = targetDate - now;
+
+        if (distance <= 0) {
+            document.getElementById("days").textContent = "00";
+            document.getElementById("hours").textContent = "00";
+            document.getElementById("minutes").textContent = "00";
+            document.getElementById("seconds").textContent = "00";
+            return;
+        }
+
+        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        document.getElementById("days").textContent = String(days).padStart(2, "0");
+        document.getElementById("hours").textContent = String(hours).padStart(2, "0");
+        document.getElementById("minutes").textContent = String(minutes).padStart(2, "0");
+        document.getElementById("seconds").textContent = String(seconds).padStart(2, "0");
+    }
+
+    setInterval(updateCountdown, 1000);
+    updateCountdown(); // Jalankan langsung pertama kali
+});
+</script>
+
+</body>
+</html>
+
